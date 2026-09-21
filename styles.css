@@ -1,0 +1,98 @@
+/* =========================================================================
+   Galaxia - Día de las Flores Amarillas
+   ========================================================================= */
+
+/* Sin esto, cualquier elemento con width/height:100% Y padding a la vez
+   queda mas ancho/alto que el propio 100% (el padding se suma aparte con
+   el box-sizing por defecto). */
+*{box-sizing:border-box;}
+
+html,body{
+  margin:0;
+  height:100%;
+  background:#000;
+  overflow:hidden;
+  -webkit-user-select:none;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
+  touch-action:none;
+}
+
+#c{
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  cursor:grab;
+}
+#c:active{cursor:grabbing;}
+
+#main-title{
+  position:fixed;
+  top:40px;
+  left:0;
+  right:0;
+  width:100%;
+  margin:0;
+  font-size:2.6em;
+  color:#FFFACD;
+  white-space:nowrap;
+  text-shadow:0 0 10px #FFD700,0 0 18px #FFA500;
+  z-index:10;
+  pointer-events:none;
+  text-align:center;
+  font-family:'Indie Flower','Bradley Hand','Segoe Script','Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',cursive;
+}
+@media (max-width:768px){
+  #main-title{font-size:1.55em;top:22px;white-space:normal;padding:0 10px;line-height:1.15;}
+}
+
+#start-screen{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  color:#fff;
+  z-index:9999;
+  padding:20px;
+  cursor:pointer;
+  transition:opacity .7s ease,visibility .7s ease;
+}
+#start-screen.hidden{opacity:0;visibility:hidden;pointer-events:none;}
+
+#start-heart{
+  font-size:clamp(74px,23vmin,148px);
+  line-height:1;
+  display:block;
+  filter:drop-shadow(0 0 14px rgba(255,215,0,.75)) drop-shadow(0 0 36px rgba(255,165,0,.38)) drop-shadow(0 0 66px rgba(218,165,32,.22));
+  animation:latido 1.35s ease-in-out infinite;
+  transform-origin:50% 55%;
+}
+@keyframes latido{
+  0%,100%{transform:scale(1);}
+  12%{transform:scale(1.15);}
+  24%{transform:scale(1);}
+  36%{transform:scale(1.07);}
+  50%{transform:scale(1);}
+}
+
+#start-text{
+  font-size:1.8em;
+  color:#FFFACD;
+  font-family:'Indie Flower','Bradley Hand','Segoe Script','Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',cursive;
+  text-shadow:0 0 7px #FFD700;
+  text-align:center;
+  margin-top:clamp(16px,3.5vh,28px);
+  animation:parpadeo 2.2s ease-in-out infinite;
+}
+@keyframes parpadeo{0%,100%{opacity:.55;}50%{opacity:1;}}
+
+@media (prefers-reduced-motion:reduce){
+  #start-heart,#start-text{animation:none;}
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>rventurave - Día de las Flores Amarillas</title>
+    <meta
+      name="description"
+      content="Un planeta oscuro con anillo dorado, girasoles 3D y frases flotando para el Día de las Flores Amarillas."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌻</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+
+    <h1 id="main-title"></h1>
+
+    <div id="start-screen">
+      <div id="start-heart">🌻</div>
+      <div id="start-text">Toca para iniciar</div>
+    </div>
+
+    <audio id="audio" loop>
+      <source src="assets/musica.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Three.js (motor 3D) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.148.0/build/three.min.js"></script>
+
+    <!-- ✏️  Tus frases y ajustes: edita config.js -->
+    <script src="config.js"></script>
+
+    <!-- La escena (no hace falta tocar) -->
+    <script src="script.js"></script>
+  </body>
+</html>
