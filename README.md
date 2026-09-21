@@ -1,15 +1,4 @@
-# 🌻 Galaxia — Día de las Flores Amarillas
-
-Página 3D: en el centro, **dos personajes aviadores** (un perrito blanco con
-casco y gafas de piloto y su amigo pajarito amarillo) dentro de un anillo
-dorado. Alrededor, **cada frase flota con su propia flor 3D en vertical**
-(girasol, tulipán o rosa amarilla), entre chispas de estrellas doradas.
-
-> Los personajes son **diseños originales inspirados en la referencia**
-> (perrito blanco de orejas caídas con gorra de aviador + pajarito con gafas).
-> No son copias de personajes con derechos de autor.
-
----
+# 🌻 Día de las Flores Amarillas
 
 ## Cómo verla
 
