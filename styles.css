@@ -34,9 +34,12 @@ html,body{
   right:0;
   width:100%;
   margin:0;
-  font-size:2.6em;
+  font-size:clamp(1.15rem,4.2vw,2.6rem);
   color:#FFFACD;
-  white-space:nowrap;
+  white-space:normal;
+  overflow-wrap:break-word;
+  padding:0 14px;
+  line-height:1.15;
   text-shadow:0 0 10px #FFD700,0 0 18px #FFA500;
   z-index:10;
   pointer-events:none;
@@ -44,7 +47,7 @@ html,body{
   font-family:'Indie Flower','Bradley Hand','Segoe Script','Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',cursive;
 }
 @media (max-width:768px){
-  #main-title{font-size:1.55em;top:22px;white-space:normal;padding:0 10px;line-height:1.15;}
+  #main-title{font-size:clamp(1.1rem,5.4vw,1.9rem);top:clamp(16px,4vh,26px);}
 }
 
 #start-screen{
