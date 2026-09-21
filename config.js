@@ -1,10 +1,9 @@
-
 window.FLORES = {
   /* ------------------------------------------------------------------
      1) TÍTULO  (el texto dorado de arriba)
 
      ------------------------------------------------------------------ */
-  titulo: "Feliz Día de las Flores Amarillas Noemi! 🌻",
+  titulo: "Happy Yellow Flowers Day Noemi 🌻",
 
   /* ------------------------------------------------------------------
      2) ✏️  TUS FRASES
